@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		B3CC93E5269C28B20012738F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CC93E4269C28B20012738F /* AppDelegate.swift */; };
 		B3CC93E7269C28B20012738F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CC93E6269C28B20012738F /* SceneDelegate.swift */; };
-		B3CC93E9269C28B20012738F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CC93E8269C28B20012738F /* ViewController.swift */; };
+		B3CC93E9269C28B20012738F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CC93E8269C28B20012738F /* CalculatorViewController.swift */; };
 		B3CC93EC269C28B20012738F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93EA269C28B20012738F /* Main.storyboard */; };
 		B3CC93EE269C28B40012738F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93ED269C28B40012738F /* Assets.xcassets */; };
 		B3CC93F1269C28B40012738F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93EF269C28B40012738F /* LaunchScreen.storyboard */; };
-		B3CC93F9269C28FD0012738F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93F8269C28FD0012738F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3CC93E1269C28B20012738F /* imamooKadai3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imamooKadai3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3CC93E4269C28B20012738F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3CC93E6269C28B20012738F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3CC93E8269C28B20012738F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3CC93E8269C28B20012738F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		B3CC93EB269C28B20012738F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3CC93ED269C28B40012738F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3CC93F0269C28B40012738F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3CC93F2269C28B40012738F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3CC93F8269C28FD0012738F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +58,11 @@
 			children = (
 				B3CC93E4269C28B20012738F /* AppDelegate.swift */,
 				B3CC93E6269C28B20012738F /* SceneDelegate.swift */,
-				B3CC93E8269C28B20012738F /* ViewController.swift */,
+				B3CC93E8269C28B20012738F /* CalculatorViewController.swift */,
 				B3CC93EA269C28B20012738F /* Main.storyboard */,
 				B3CC93ED269C28B40012738F /* Assets.xcassets */,
 				B3CC93EF269C28B40012738F /* LaunchScreen.storyboard */,
 				B3CC93F2269C28B40012738F /* Info.plist */,
-				B3CC93F8269C28FD0012738F /* .gitignore */,
 			);
 			path = imamooKadai3;
 			sourceTree = "<group>";
@@ -80,6 +77,7 @@
 				B3CC93DD269C28B20012738F /* Sources */,
 				B3CC93DE269C28B20012738F /* Frameworks */,
 				B3CC93DF269C28B20012738F /* Resources */,
+				B3CC93FA269C3D420012738F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -127,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3CC93F9269C28FD0012738F /* .gitignore in Resources */,
 				B3CC93F1269C28B40012738F /* LaunchScreen.storyboard in Resources */,
 				B3CC93EE269C28B40012738F /* Assets.xcassets in Resources */,
 				B3CC93EC269C28B20012738F /* Main.storyboard in Resources */,
@@ -136,12 +133,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3CC93FA269C3D420012738F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3CC93DD269C28B20012738F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3CC93E9269C28B20012738F /* ViewController.swift in Sources */,
+				B3CC93E9269C28B20012738F /* CalculatorViewController.swift in Sources */,
 				B3CC93E5269C28B20012738F /* AppDelegate.swift in Sources */,
 				B3CC93E7269C28B20012738F /* SceneDelegate.swift in Sources */,
 			);
