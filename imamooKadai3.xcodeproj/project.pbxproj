@@ -13,6 +13,7 @@
 		B3CC93EC269C28B20012738F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93EA269C28B20012738F /* Main.storyboard */; };
 		B3CC93EE269C28B40012738F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93ED269C28B40012738F /* Assets.xcassets */; };
 		B3CC93F1269C28B40012738F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93EF269C28B40012738F /* LaunchScreen.storyboard */; };
+		B3CC93F9269C28FD0012738F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B3CC93F8269C28FD0012738F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B3CC93ED269C28B40012738F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3CC93F0269C28B40012738F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3CC93F2269C28B40012738F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CC93F8269C28FD0012738F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B3CC93ED269C28B40012738F /* Assets.xcassets */,
 				B3CC93EF269C28B40012738F /* LaunchScreen.storyboard */,
 				B3CC93F2269C28B40012738F /* Info.plist */,
+				B3CC93F8269C28FD0012738F /* .gitignore */,
 			);
 			path = imamooKadai3;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CC93F9269C28FD0012738F /* .gitignore in Resources */,
 				B3CC93F1269C28B40012738F /* LaunchScreen.storyboard in Resources */,
 				B3CC93EE269C28B40012738F /* Assets.xcassets in Resources */,
 				B3CC93EC269C28B20012738F /* Main.storyboard in Resources */,
