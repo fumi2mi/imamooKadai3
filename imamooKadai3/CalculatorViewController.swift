@@ -17,18 +17,28 @@ class CalculatorViewController: UIViewController {
     @IBOutlet private weak var resultLabel: UILabel!
 
     @IBAction private func buttonPressed(_ sender: UIButton) {
-        var leftInt = Int(leftTextField.text ?? "") ?? 0
+        let leftInt = Int(leftTextField.text ?? "") ?? 0
+
+        let signedLeftInt: Int
         if leftSwitch.isOn {
-            leftInt = -leftInt
+            signedLeftInt = -leftInt
+        } else {
+            signedLeftInt = leftInt
         }
-        leftLabel.text = String(leftInt)
 
-        var rightInt = Int(rightTextField.text ?? "") ?? 0
+        leftLabel.text = String(signedLeftInt)
+
+        let rightInt = Int(rightTextField.text ?? "") ?? 0
+
+        let signedRightInt: Int
         if rightSwitch.isOn {
-            rightInt = -rightInt
+            signedRightInt = -rightInt
+        } else {
+            signedRightInt = rightInt
         }
-        rightLabel.text = String(rightInt)
 
-        resultLabel.text = String(leftInt + rightInt)
+        rightLabel.text = String(signedRightInt)
+
+        resultLabel.text = String(signedLeftInt + signedRightInt)
     }
 }
